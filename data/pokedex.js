@@ -4006,7 +4006,7 @@ exports.BattlePokedex = {
 	sceptile: {
 		num: 254,
 		species: "Sceptile",
-		types: ["Grass"],
+		types: ["Grass","Flying","Dragon"],
 		genderRatio: {M: 0.875, F: 0.125},
 		baseStats: {hp: 70, atk: 85, def: 65, spa: 105, spd: 85, spe: 120},
 		abilities: {0: "Overgrow", H: "Unburden"},
