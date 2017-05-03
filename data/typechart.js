@@ -1,37 +1,35 @@
-'use strict';
-
 exports.BattleTypeChart = {
 	"Bug": {
 		damageTaken: {
+			"Aurora": 0,
 			"Bug": 0,
 			"Dark": 0,
 			"Dragon": 0,
 			"Electric": 0,
 			"Fairy": 0,
-			"Fighting": 2,
-			"Fire": 1,
+			"Fighting": 0,
+			"Fire": 0,
 			"Flying": 1,
 			"Ghost": 0,
 			"Grass": 2,
 			"Ground": 2,
 			"Ice": 0,
 			"Normal": 0,
-			"Poison": 0,
+			"Poison": 1,
 			"Psychic": 0,
 			"Rock": 1,
 			"Steel": 0,
 			"Water": 0,
 		},
-		HPivs: {"atk":30, "def":30, "spd":30},
-		HPdvs: {"atk":13, "def":13},
+		HPivs: {"atk":30, "def":30, "spd":30}
 	},
 	"Dark": {
 		damageTaken: {
-			prankster: 3,
+			"Aurora": 0,
 			"Bug": 1,
 			"Dark": 2,
 			"Dragon": 0,
-			"Electric": 0,
+			"Electric": 2,
 			"Fairy": 1,
 			"Fighting": 1,
 			"Fire": 0,
@@ -47,10 +45,11 @@ exports.BattleTypeChart = {
 			"Steel": 0,
 			"Water": 0,
 		},
-		HPivs: {},
+		HPivs: {}
 	},
 	"Dragon": {
 		damageTaken: {
+			"Aurora": 0,
 			"Bug": 0,
 			"Dark": 0,
 			"Dragon": 1,
@@ -70,14 +69,14 @@ exports.BattleTypeChart = {
 			"Steel": 0,
 			"Water": 2,
 		},
-		HPivs: {"atk":30},
-		HPdvs: {"def":14},
+		HPivs: {"atk":30}
 	},
 	"Electric": {
 		damageTaken: {
 			par: 3,
+			"Aurora": 0,
 			"Bug": 0,
-			"Dark": 0,
+			"Dark": 1,
 			"Dragon": 0,
 			"Electric": 2,
 			"Fairy": 0,
@@ -95,11 +94,11 @@ exports.BattleTypeChart = {
 			"Steel": 2,
 			"Water": 0,
 		},
-		HPivs: {"spa":30},
-		HPdvs: {"atk":14},
+		HPivs: {"spa":30}
 	},
 	"Fairy": {
 		damageTaken: {
+			"Ayrora": 1,
 			"Bug": 2,
 			"Dark": 2,
 			"Dragon": 3,
@@ -118,11 +117,12 @@ exports.BattleTypeChart = {
 			"Rock": 0,
 			"Steel": 1,
 			"Water": 0,
-		},
+		}
 	},
 	"Fighting": {
 		damageTaken: {
-			"Bug": 2,
+			"Aurora": 0,
+			"Bug": 0,
 			"Dark": 2,
 			"Dragon": 0,
 			"Electric": 0,
@@ -141,12 +141,12 @@ exports.BattleTypeChart = {
 			"Steel": 0,
 			"Water": 0,
 		},
-		HPivs: {"def":30, "spa":30, "spd":30, "spe":30},
-		HPdvs: {"atk":12, "def":12},
+		HPivs: {"def":30, "spa":30, "spd":30, "spe":30}
 	},
 	"Fire": {
 		damageTaken: {
 			brn: 3,
+			"Aurora": 2,
 			"Bug": 2,
 			"Dark": 0,
 			"Dragon": 0,
@@ -166,11 +166,11 @@ exports.BattleTypeChart = {
 			"Steel": 2,
 			"Water": 1,
 		},
-		HPivs: {"atk":30, "spa":30, "spe":30},
-		HPdvs: {"atk":14, "def":12},
+		HPivs: {"atk":30, "spa":30, "spe":30}
 	},
 	"Flying": {
 		damageTaken: {
+			"Aurora": 0,
 			"Bug": 2,
 			"Dark": 0,
 			"Dragon": 0,
@@ -190,12 +190,12 @@ exports.BattleTypeChart = {
 			"Steel": 0,
 			"Water": 0,
 		},
-		HPivs: {"hp":30, "atk":30, "def":30, "spa":30, "spd":30},
-		HPdvs: {"atk":12, "def":13},
+		HPivs: {"hp":30, "atk":30, "def":30, "spa":30, "spd":30}
 	},
 	"Ghost": {
 		damageTaken: {
 			trapped: 3,
+			"Aurora": 0,
 			"Bug": 2,
 			"Dark": 1,
 			"Dragon": 0,
@@ -210,17 +210,17 @@ exports.BattleTypeChart = {
 			"Ice": 0,
 			"Normal": 3,
 			"Poison": 2,
-			"Psychic": 0,
+			"Psychic": 1,
 			"Rock": 0,
 			"Steel": 0,
 			"Water": 0,
 		},
-		HPivs: {"def":30, "spd":30},
-		HPdvs: {"atk":13, "def":14},
+		HPivs: {"def":30, "spd":30}
 	},
 	"Grass": {
 		damageTaken: {
 			powder: 3,
+			"Aurora": 0,
 			"Bug": 1,
 			"Dark": 0,
 			"Dragon": 0,
@@ -228,7 +228,7 @@ exports.BattleTypeChart = {
 			"Fairy": 0,
 			"Fighting": 0,
 			"Fire": 1,
-			"Flying": 1,
+			"Flying": 0,
 			"Ghost": 0,
 			"Grass": 2,
 			"Ground": 2,
@@ -240,12 +240,12 @@ exports.BattleTypeChart = {
 			"Steel": 0,
 			"Water": 2,
 		},
-		HPivs: {"atk":30, "spa":30},
-		HPdvs: {"atk":14, "def":14},
+		HPivs: {"atk":30, "spa":30}
 	},
 	"Ground": {
 		damageTaken: {
 			sandstorm: 3,
+			"Aurora": 1,
 			"Bug": 0,
 			"Dark": 0,
 			"Dragon": 0,
@@ -265,23 +265,23 @@ exports.BattleTypeChart = {
 			"Steel": 0,
 			"Water": 1,
 		},
-		HPivs: {"spa":30, "spd":30},
-		HPdvs: {"atk":12},
+		HPivs: {"spa":30, "spd":30}
 	},
 	"Ice": {
 		damageTaken: {
 			hail: 3,
 			frz: 3,
+			"Aurora": 2,
 			"Bug": 0,
 			"Dark": 0,
 			"Dragon": 0,
 			"Electric": 0,
 			"Fairy": 0,
-			"Fighting": 1,
+			"Fighting": 0,
 			"Fire": 1,
 			"Flying": 0,
 			"Ghost": 0,
-			"Grass": 0,
+			"Grass": 2,
 			"Ground": 0,
 			"Ice": 2,
 			"Normal": 0,
@@ -289,13 +289,13 @@ exports.BattleTypeChart = {
 			"Psychic": 0,
 			"Rock": 1,
 			"Steel": 1,
-			"Water": 0,
+			"Water": 2,
 		},
-		HPivs: {"atk":30, "def":30},
-		HPdvs: {"def":13},
+		HPivs: {"atk":30, "def":30}
 	},
 	"Normal": {
 		damageTaken: {
+			"Aurora": 0,
 			"Bug": 0,
 			"Dark": 0,
 			"Dragon": 0,
@@ -314,12 +314,13 @@ exports.BattleTypeChart = {
 			"Rock": 0,
 			"Steel": 0,
 			"Water": 0,
-		},
+		}
 	},
 	"Poison": {
 		damageTaken: {
 			psn: 3,
 			tox: 3,
+			"Aurora": 0,
 			"Bug": 2,
 			"Dark": 0,
 			"Dragon": 0,
@@ -330,20 +331,20 @@ exports.BattleTypeChart = {
 			"Flying": 0,
 			"Ghost": 0,
 			"Grass": 2,
-			"Ground": 1,
+			"Ground": 0,
 			"Ice": 0,
 			"Normal": 0,
 			"Poison": 2,
 			"Psychic": 1,
 			"Rock": 0,
-			"Steel": 0,
+			"Steel": 1,
 			"Water": 0,
 		},
-		HPivs: {"def":30, "spa":30, "spd":30},
-		HPdvs: {"atk":12, "def":14},
+		HPivs: {"def":30, "spa":30, "spd":30}
 	},
 	"Psychic": {
 		damageTaken: {
+			"Aurora": 1,
 			"Bug": 1,
 			"Dark": 1,
 			"Dragon": 0,
@@ -357,18 +358,18 @@ exports.BattleTypeChart = {
 			"Ground": 0,
 			"Ice": 0,
 			"Normal": 0,
-			"Poison": 0,
+			"Poison": 2,
 			"Psychic": 2,
 			"Rock": 0,
 			"Steel": 0,
 			"Water": 0,
 		},
-		HPivs: {"atk":30, "spe":30},
-		HPdvs: {"def":12},
+		HPivs: {"atk":30, "spe":30}
 	},
 	"Rock": {
 		damageTaken: {
 			sandstorm: 3,
+			"Aurora": 0,
 			"Bug": 0,
 			"Dark": 0,
 			"Dragon": 0,
@@ -388,16 +389,16 @@ exports.BattleTypeChart = {
 			"Steel": 1,
 			"Water": 1,
 		},
-		HPivs: {"def":30, "spd":30, "spe":30},
-		HPdvs: {"atk":13, "def":12},
+		HPivs: {"def":30, "spd":30, "spe":30}
 	},
 	"Steel": {
 		damageTaken: {
 			psn: 3,
 			tox: 3,
 			sandstorm: 3,
+			"Aurora": 2,
 			"Bug": 2,
-			"Dark": 0,
+			"Dark": 2,
 			"Dragon": 2,
 			"Electric": 0,
 			"Fairy": 2,
@@ -415,11 +416,11 @@ exports.BattleTypeChart = {
 			"Steel": 2,
 			"Water": 0,
 		},
-		HPivs: {"spd":30},
-		HPdvs: {"atk":13},
+		HPivs: {"spd":30}
 	},
 	"Water": {
 		damageTaken: {
+			"Aurora": 0,
 			"Bug": 0,
 			"Dark": 0,
 			"Dragon": 0,
@@ -439,7 +440,30 @@ exports.BattleTypeChart = {
 			"Steel": 2,
 			"Water": 2,
 		},
-		HPivs: {"atk":30, "def":30, "spa":30},
-		HPdvs: {"atk":14, "def":13},
+		HPivs: {"atk":30, "def":30, "spa":30}
+	},
+	"Aurora": {
+		damageTaken: {
+			"Aurora": 0,
+			"Bug": 0,
+			"Dark": 0,
+			"Dragon": 0,
+			"Electric": 0,
+			"Fairy": 3,
+			"Fighting": 0,
+			"Fire": 1,
+			"Flying": 0,
+			"Ghost": 1,
+			"Grass": 0,
+			"Ground": 0,
+			"Ice": 2,
+			"Normal": 0,
+			"Poison": 0,
+			"Psychic": 2,
+			"Rock": 0,
+			"Steel": 1,
+			"Water": 0,
+		},
+		HPivs: {"spa":30, "spd":30}
 	},
 };
